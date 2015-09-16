@@ -1,0 +1,43 @@
+{% extends 'dashboard/layout.html' %}
+
+{% block body %}
+
+        <!-- Sub Nav End -->
+        <div class="sub-nav hidden-sm hidden-xs">
+          <ul>
+            <li><a href="#" class="heading">User stats - {btcaddy} </a></li>
+
+          </ul>
+          <div class="custom-search hidden-sm hidden-xs">
+            <input type="text" class="search-query" placeholder="Search here ...">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+        <!-- Sub Nav End -->
+       <!-- Dashboard Wrapper Start -->
+        <div class="dashboard-wrapper-lg">
+
+          <!-- Row starts -->
+          <div class="row">
+
+              <div class="col-lg-12 col-md-12">
+                <div class="widget">
+                  <div class="widget-header">
+                    <div class="title">
+                      Vertical Chart
+                    </div>
+                    <span class="tools">
+                      <i class="fa fa-cogs" data-original-title="" title=""></i>
+                    </span>
+                  </div>
+                  <div class="widget-body">
+                    <div id="flot-placeholder" class="chart-height" style="padding: 0px;"><canvas class="base" width="1447" height="180"></canvas><canvas class="overlay" width="1447" height="180" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="tickLabels" style="font-size:smaller"><div class="xAxis x1Axis" style="color:#545454"><div class="tickLabel" style="position:absolute;text-align:center;left:105px;top:160px;width:65px">16:34</div><div class="tickLabel" style="position:absolute;text-align:center;left:391px;top:160px;width:65px">16:34</div><div class="tickLabel" style="position:absolute;text-align:center;left:677px;top:160px;width:65px">16:35</div><div class="tickLabel" style="position:absolute;text-align:center;left:963px;top:160px;width:65px">16:35</div><div class="tickLabel" style="position:absolute;text-align:center;left:1249px;top:160px;width:65px">16:35</div></div><div class="yAxis y1Axis" style="color:#545454"><div class="tickLabel" style="position:absolute;text-align:right;top:144px;right:1426px;width:21px">0%</div><div class="tickLabel" style="position:absolute;text-align:right;top:99px;right:1426px;width:21px">30%</div><div class="tickLabel" style="position:absolute;text-align:right;top:54px;right:1426px;width:21px">60%</div><div class="tickLabel" style="position:absolute;text-align:right;top:9px;right:1426px;width:21px">90%</div></div></div><div class="legend"><div style="position: absolute; width: 45px; height: 20px; top: 9px; left: 32px; opacity: 0.85; background-color: rgb(255, 255, 255);"> </div><table style="position:absolute;top:9px;left:32px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid #1e91cf;overflow:hidden"></div></div></td><td class="legendLabel">CPU</td></tr></tbody></table></div></div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <!-- Row ends -->
+
+
+{% endblock %}
