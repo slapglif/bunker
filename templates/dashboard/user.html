@@ -36,7 +36,142 @@
                 </div>
               </div>
 
+
+              <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+<div class="panel panel-default" style="background-color:#4F4F4F;">
+<div class="panel-heading">
+<h3>
+<i class="fa fa-circle" style="color:#5BCE00" data-toggle="tooltip" data-placement="right" title="Online"></i>&nbsp;
+<small>(lyra2rev2)</small>
+&nbsp;&nbsp;<small style="font-size:8pt;">stratum+tcp://mine.xpool.ca:1142 (1 connections)</small>
+<span class="pull-right">
+<small class="text-right" style="padding-left:10px;font-weight:300;">Hashrate:
+82.21 MH/s &nbsp;
+<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Average hashrate over the last ten minutes based on accepted shares, NOT PPAgent."></i></small>
+<small class="text-right" style="padding-left:10px;font-weight:300;">Efficiency:
+98.39% &nbsp;
+<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Computed from accepted/total(565038.0/574486.0) shares submitted in the last 24 hours"></i></small>
+</span>
+</h3>
+<div class="clearfix"></div>
+</div>
+<div class="panel-body" style="padding:0px;">
+<div class="table-responsive  bs-component" style="position:relative;padding:9px;">
+<div class="col-xs-6 text-center">
+<h4>Accepted Shares: 565,038.0&nbsp;
+<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Accepted shares over the last 24 hours"></i></h4>
+</div>
+<div class="col-xs-6 text-center">
+<h4>Rejected Shares: 9,272.0&nbsp;
+<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Rejected shares over the last 24 hours"></i></h4>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+
+
           </div>
+
+            <div class="row row-header">
+<h2>Recent Payouts</h2>
+<br>
+<script>
+    $(document).ready(function() {
+      $("#blockTable").tablesorter({
+        textExtraction: function(node) {
+          var attr = $(node).attr('data-sort-value');
+          if (typeof attr !== 'undefined' && attr !== false) {
+            return attr;
+          }
+          return $(node).text();
+        }
+      });
+    });
+    </script>
+<div class="col-lg-12">
+<div class="bs-example table-responsive">
+<table class="table table-striped table-hover tablesorter tablesorter-default" id="blockTable" role="grid">
+<thead>
+<tr class="tablesorter-headerRow" role="row">
+<th data-column="0" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="blockTable" unselectable="on" aria-sort="none" aria-label="Time: No sort applied, activate to apply an ascending sort" style="-webkit-user-select: none;"><div class="tablesorter-header-inner">Time</div></th>
+<th data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="blockTable" unselectable="on" aria-sort="none" aria-label="Amount: No sort applied, activate to apply an ascending sort" style="-webkit-user-select: none;"><div class="tablesorter-header-inner">Amount</div></th>
+<th data-column="2" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="blockTable" unselectable="on" aria-sort="none" aria-label="Currency: No sort applied, activate to apply an ascending sort" style="-webkit-user-select: none;"><div class="tablesorter-header-inner">Currency</div></th>
+<th data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="blockTable" unselectable="on" aria-sort="none" aria-label="TXID: No sort applied, activate to apply an ascending sort" style="-webkit-user-select: none;"><div class="tablesorter-header-inner">TXID</div></th>
+<th data-column="4" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="blockTable" unselectable="on" aria-sort="none" aria-label="Status: No sort applied, activate to apply an ascending sort" style="-webkit-user-select: none;"><div class="tablesorter-header-inner">Status</div></th>
+</tr>
+</thead>
+<tbody aria-live="polite" aria-relevant="all">
+<tr>
+<th data-sort-value="">1 day, 14 hours ago</th>
+<th>0.00864720</th>
+<th>BTC</th>
+<th>
+<a target="_blank" href="https://blockchain.info/tx/f030ed023c784875db3801ee4bff42766ce36c789161479d88927cd362b093c7">f030ed023c784875db3801ee4bff42766ce36c789161479d88927cd362b093c7</a>
+</th>
+<th>Complete</th>
+</tr>
+<tr>
+<th data-sort-value="">2 days, 13 hours ago</th>
+<th>0.02376989</th>
+<th>BTC</th>
+<th>
+<a target="_blank" href="https://blockchain.info/tx/5c71d4573e1b2a63675f5a8ffcf82ca8afa065ac3aa22d08a6964e4d6fb4a759">5c71d4573e1b2a63675f5a8ffcf82ca8afa065ac3aa22d08a6964e4d6fb4a759</a>
+</th>
+<th>Complete</th>
+</tr>
+<tr>
+<th data-sort-value="">5 days, 13 hours ago</th>
+<th>0.02012317</th>
+<th>BTC</th>
+<th>
+<a target="_blank" href="https://blockchain.info/tx/211d344cc2b016117693506b16345ef7afa883c4b634e7049603e944af126c73">211d344cc2b016117693506b16345ef7afa883c4b634e7049603e944af126c73</a>
+</th>
+<th>Complete</th>
+</tr>
+<tr>
+<th data-sort-value="">6 days, 13 hours ago</th>
+<th>0.06575396</th>
+<th>BTC</th>
+<th>
+<a target="_blank" href="https://blockchain.info/tx/bdcd21fe3ff1feff524ff28aea17891bb4ebe04af9ecd558ad1a7a42b02a3690">bdcd21fe3ff1feff524ff28aea17891bb4ebe04af9ecd558ad1a7a42b02a3690</a>
+</th>
+<th>Complete</th>
+</tr>
+<tr>
+<th data-sort-value="">7 days, 13 hours ago</th>
+<th>0.01557561</th>
+<th>BTC</th>
+<th>
+<a target="_blank" href="https://blockchain.info/tx/f814dcd00172a253b84389951feecac54b4de0021fe7f5f65e4ee11510f511c8">f814dcd00172a253b84389951feecac54b4de0021fe7f5f65e4ee11510f511c8</a>
+</th>
+<th>Complete</th>
+</tr>
+<tr>
+<th data-sort-value="">8 days, 11 hours ago</th>
+<th>0.02053532</th>
+<th>BTC</th>
+<th>
+<a target="_blank" href="https://blockchain.info/tx/4d281ff8d2436f99486abe317eef02277e4715597862bdf16c088bce47e813c9">4d281ff8d2436f99486abe317eef02277e4715597862bdf16c088bce47e813c9</a>
+</th>
+<th>Complete</th>
+</tr>
+<tr>
+<th data-sort-value="">9 days, 8 hours ago</th>
+<th>0.09713625</th>
+<th>BTC</th>
+<th>
+<a target="_blank" href="https://blockchain.info/tx/4d4c9e8ee82488779a7fc061445b1cc77a6f835f187885d74d0bf67e08e5c76e">4d4c9e8ee82488779a7fc061445b1cc77a6f835f187885d74d0bf67e08e5c76e</a>
+</th>
+<th>Complete</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<a href="/14wsTc942qnxDBE6LbE4R6F1VRSxpEw3dC/account">View all account transactions</a>
+</div>
           <!-- Row ends -->
 
 
